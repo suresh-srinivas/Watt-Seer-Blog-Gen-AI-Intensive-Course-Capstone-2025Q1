@@ -5,28 +5,29 @@ layout: default
 ---
 
 # 🧠 Watt-Saver the Personalized Energy Coach
+![header](/Images/header.png)
 
-This is the blog for [Gen AI Intensive Course Capstone 2025Q1 Porject](https://www.kaggle.com/competitions/gen-ai-intensive-course-capstone-2025q1) which is part of [5-Day Gen AI Intensive Course with Google](https://rsvp.withgoogle.com/events/google-generative-ai-intensive_2025q1)
+## This is the blog for [Gen AI Intensive Course Capstone 2025Q1 Porject](https://www.kaggle.com/competitions/gen-ai-intensive-course-capstone-2025q1) which is part of [5-Day Gen AI Intensive Course with Google](https://rsvp.withgoogle.com/events/google-generative-ai-intensive_2025q1)
 
 
-💡 Understanding Energy Bills with GenAI:
+## 💡 Understanding Energy Bills with GenAI:
 
 Many people receive energy bills without knowing why they’re high or how to reduce them. This project shows how Generative AI (GenAI) can help users understand their energy consumption and get personalized, human-readable feedback.
 
-❓ Why/How GenAI can solve the problem?
+## ❓ Why/How GenAI can solve the problem?
 
 Charts and numbers alone don’t help most people take action. GenAI transforms raw energy data into insightful narratives—like identifying your most expensive usage days and suggesting practical changes in behavior or device usage.
 
-🔍 How It Works
+## 🔍 How It Works
 We used hourly energy consumption data from a single home. After cleaning and summarizing it, we prompted Gemini (a GenAI model) to explain trends—like why usage spiked on certain days—and offer tips to reduce costs.
 
-📊 Key Results
+## 📊 Key Results
 Instead of just visualizing data, Gemini responded with plain-language insights and personalized advice. It helped reveal things like:
 - Which time of day is most expensive
 - When heating/cooling is overused
 - How to shift usage to off-peak hours
 
-🚀 Impact
+## 🚀 Impact
 This approach can scale to households or communities. Tools like Watt-Save use GenAI to suggest smarter energy use—helping people cut costs and reduce waste without needing technical skills.
 ## 👥 Team Members
 
