@@ -1,13 +1,13 @@
 
 ---
 title: "Watt-Seer: How Three Neighbors Used AI to Understand Their Energy Usage"
-description: A storytelling case study on using Kaggle + Gemini Vision to compare home energy data and extract insights from scanned bills.
+description: A storytelling case study on using Kaggle + Gemini to compare home energy data and extract insights from scanned bills.
 date: 2024-04-16
 author: Suresh Srinivas
 layout: post
 ---
 
-# 🔋 Watt-Seer: How Three Neighbors Used AI to Understand Their Energy Usage
+# 🔋 Watt-Seer - Personalized Energy Coach: How Three Neighbors Used AI to Understand Their Energy Usage
 
 In a quiet cul-de-sac in Portland, three retired neighbors found themselves in a uniquely 21st-century situation: they wanted to understand their electric bills — and only one of them knew how to code.
 
@@ -107,23 +107,24 @@ Compare our energy profiles and explain the differences.
 ### 🔹 Sending a bill image to Gemini Vision
 
 ```python
-with open("neighbors_bill.jpg", "rb") as img_file:
-    image_data = img_file.read()
+prompt = [
+  f"This is my neighbor’s electric bill. Please extract the monthly energy usage (in kWh) for all the months",
+  PIL.Image.open("/kaggle/input/neighborbill/Neighbor-Bill.jpeg")
+]
 
 response = client.models.generate_content(
-    model='gemini-pro-vision',
-    contents=[
-        {"text": prompt},
-        {"image": image_data}
-    ]
+    model='gemini-2.0-flash',
+    contents=prompt
 )
+neighbors_energy = response.text
+Markdown(response.text)
 ```
 
 ---
 
 ## 🚧 Limitations & What's Next
 
-- 📷 **Image extraction isn't perfect**: Gemini Vision might misread handwritten notes or low-res scans.
+- 📷 **Image extraction isn't perfect**: Gemini misread handwritten notes or low-res scans.
 - 💬 **AI-generated insights may need validation**: Always double-check suggestions with a professional (especially for HVAC or insulation upgrades).
 - 🔮 **Future Possibility**: Automatically pull utility bills via API, integrate smart thermostat data, or use fine-tuned models for your home's energy profile.
 
