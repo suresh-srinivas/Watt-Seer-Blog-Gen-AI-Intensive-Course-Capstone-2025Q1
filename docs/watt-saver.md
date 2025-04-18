@@ -97,7 +97,7 @@ We can see the plot to have an quick grasp of the data and see Air conditioning 
 
 The second dataset is more meter data of a single household for one year on hourly basis and the other one is appliances of 500 households over multiple time period
 
-We will first analysis this `energy_hourly_data_2024_meter2.dat` dataset to get the fixed rate
+We will first analysis this `energy_hourly_data_2024_meter2.dat` dataset to get the fixed rate。
 
 
 
