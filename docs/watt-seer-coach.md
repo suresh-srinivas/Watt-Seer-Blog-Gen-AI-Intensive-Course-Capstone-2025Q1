@@ -1,12 +1,22 @@
-
 ---
 title: "Watt-Seer: How Three Neighbors Used AI to Understand Their Energy Usage"
-description: A storytelling case study on using Kaggle + Gemini to compare home energy data and extract insights from scanned bills.
+description:
 date: 2024-04-16
 author: Suresh Srinivas
 layout: post
 ---
+# Watt-Seer - Personalized Energy Coach
+## This is the blog for [Gen AI Intensive Course Capstone 2025Q1 Porject](https://www.kaggle.com/competitions/gen-ai-intensive-course-capstone-2025q1) which is part of [5-Day Gen AI Intensive Course with Google](https://rsvp.withgoogle.com/events/google-generative-ai-intensive_2025q1)
 
+ A storytelling case study on using Kaggle + Gemini to compare home energy data and extract insights from scanned bills.
+
+## 👥 Team Members
+
+- [Ashwini Apte](https://www.kaggle.com/ashwiniapte)
+- [Suresh Srinivas](https://www.kaggle.com/sureshsrinivas)
+- [Rao Parasa](https://www.kaggle.com/raoparasa) 
+
+# 
 # 🔋 Watt-Seer - Personalized Energy Coach: How Three Neighbors Used AI to Understand Their Energy Usage
 
 In a quiet cul-de-sac in Portland, three retired neighbors found themselves in a uniquely 21st-century situation: they wanted to understand their electric bills — and only one of them knew how to code.
@@ -64,14 +74,14 @@ Gemini Vision read Jerry's scanned bill and returned:
 
 - Billing period: Jan 5 to Feb 5  
 - Usage: 3,200 kWh  
-- Cost: $386  
-- Estimated rate: $0.12/kWh
+- Cost: $528  
+- Estimated rate: $0.165/kWh
 
 ---
 
 ## 💬 Gemini-Powered Recommendations
 
-> "Jerry's home may be better insulated or use a gas furnace. Ed's electric resistance heating likely caused the winter spike. Consider supplemental heating or sealing air leaks."
+> " Ed's electric resistance heating likely caused the winter spike. Consider supplemental heating or sealing air leaks."
 
 ---
 
@@ -104,7 +114,7 @@ Compare our energy profiles and explain the differences.
 '''
 ```
 
-### 🔹 Sending a bill image to Gemini Vision
+### 🔹 Sending a bill image to Gemini
 
 ```python
 prompt = [
@@ -126,7 +136,7 @@ Markdown(response.text)
 
 - 📷 **Image extraction isn't perfect**: Gemini misread handwritten notes or low-res scans.
 - 💬 **AI-generated insights may need validation**: Always double-check suggestions with a professional (especially for HVAC or insulation upgrades).
-- 🔮 **Future Possibility**: Automatically pull utility bills via API, integrate smart thermostat data, or use fine-tuned models for your home's energy profile.
+- 🔮 **Future Possibility**: Automatically pull utility data through API, integrate other energy data (eg solar) and include smart thermostat data to tell the house temperature, or use fine-tuned models for your home's energy profile.
 
 ---
 
@@ -140,8 +150,8 @@ If you've got a folder of bills — or a zip of usage data — maybe it's your t
 
 ## 🔗 Try Watt-Seer Yourself
 
-👉 [Link to the Kaggle Notebook](#)  
-*(Replace this with the actual link to your notebook)*
+
+[🔗 View on Kaggle](https://www.kaggle.com/code/sureshsrinivas/watt-seer-personalized-energy-coach)  
 
 Upload your own usage data. Or just bring a photo of your bill.  
 Let the AI do the explaining.  
