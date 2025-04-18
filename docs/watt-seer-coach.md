@@ -1,9 +1,6 @@
 ---
 title: "Watt-Seer: How Three Neighbors Used AI to Understand Their Energy Usage"
-description:
-date: 2024-04-16
-author: Suresh Srinivas
-layout: post
+layout: default
 ---
 # Watt-Seer - Personalized Energy Coach
 ## This is the blog for [Gen AI Intensive Course Capstone 2025Q1 Porject](https://www.kaggle.com/competitions/gen-ai-intensive-course-capstone-2025q1) which is part of [5-Day Gen AI Intensive Course with Google](https://rsvp.withgoogle.com/events/google-generative-ai-intensive_2025q1)
