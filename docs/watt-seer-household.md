@@ -71,7 +71,7 @@ Users ask plain English questions; AI runs the appropriate code and replies in c
 
 ---
 
-## 🎥 Project Walkthrough: Watch Our Energy-Saving Innovation in Action 🌍
+## 🎥 Project Walkthrough: Watch Our Energy‑Saving Innovation in Action 🌍
 
 [![Watch the video](https://img.youtube.com/vi/xWRcOQk_glU/hqdefault.jpg)](https://youtu.be/xWRcOQk_glU)
 
