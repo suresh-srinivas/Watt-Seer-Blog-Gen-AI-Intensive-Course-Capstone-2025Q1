@@ -45,7 +45,7 @@ On the other hand, millions of Americans only have **paper bills** with **monthl
 
 ---
 
-## 🛠️ What They Built: Watt-Seer
+## 🛠️ What They Built: Watt-Seer Personalization Coach
 
 - Ed provided the **hourly energy consumption data** from his utility.
 - Jerry gave Anita a **photo of his electric bill**.
@@ -61,7 +61,9 @@ On the other hand, millions of Americans only have **paper bills** with **monthl
 
 ## 📉 Ed's Consumption on a Cold Week
 
-> "You used 237 kWh on January 16 alone," Anita pointed out. "Looks like your heat pump switched to resistance mode during the cold snap."
+![Energy Usage Graph](images/energy-graph.png)
+
+> "You used 237 kWh on January 16 alone," Anita pointed out. "AI root caused it and it Looks like your heat pump switched to resistance mode during the cold snap."
 
 ---
 
@@ -99,16 +101,25 @@ monthly_data = df.resample('M').agg({
 ### 🔹 Formatting for Gemini comparison
 
 ```python
-monthly_text = monthly_data.to_string()
+compare_prompt = f"""
+Here is my neighbor’s extracted monthly energy usage:
 
-prompt = f'''
-This is my neighbor's electric bill image. Please extract monthly kWh usage.
+{neighbor_usage_summary}
 
-Here's my usage for the same months:
+Here is my own energy usage during the same months:
+
 {monthly_text}
 
-Compare our energy profiles and explain the differences.
-'''
+Please compare our energy usage and suggest why there might be differences. We both are in Portland, OR and are a two person household. Use a simple ratio of my usage/neighbors. Also mention whether the usage levels are typical for similar homes.
+"""
+
+response_compare = client.models.generate_content(
+    model='gemini-2.0-flash',
+    contents=compare_prompt
+)
+
+Markdown(response_compare.text)
+
 ```
 
 ### 🔹 Sending a bill image to Gemini
