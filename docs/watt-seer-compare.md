@@ -1,10 +1,22 @@
-# 💡 Watt-Seer-Compare: Is Your Energy Bill "Normal"? AI Finds Your Household's 'Energy Twins'
+---
+title: "Is Your Energy Bill Normal? AI Finds Your Household's Energy Twins" 
+description: "Stop comparing apples to oranges. Watt-Seer-Compare uses AI embeddings and LLM analysis on home data to benchmark your energy use against similar homes."
+layout: default
+---
 
-You stare at your energy bill. The numbers fluctuate month to month, but one question always lingers: **"Is this *normal*?"**  You check the usage – hundreds, maybe thousands of kilowatt-hours (kWh). But what does that really mean? Compared to whom? Is your home an energy guzzler, a model of efficiency, or just... average?
+# 💡 Watt-Seer-Compare
+
+You stare at your energy bill. The numbers fluctuate month to month, but one question always lingers: **"*Is this normal*?"**  You check the usage – hundreds, maybe thousands of kilowatt-hours (kWh). But what does that really mean? Compared to whom? Is your home an energy guzzler, a model of efficiency, or just... average?
 
 It's a question millions ask, often met with frustratingly little context. Raw smart meter data is overwhelming, and simple monthly totals hide the real story. What if you could see how your home truly stacks up against others just like it? Maybe you live in a neighborhood with similar houses, but you don't know your neighbors' habits. Maybe the weather was weird last month. How does your specific energy usage pattern – driven by your appliances, your schedule, and your household size – compare to others like you?
 
 That's the quest behind Watt-Seer-Compare. We're moving beyond simple averages to provide personalized, AI-powered energy benchmarking. Using detailed smart home data and the nuanced understanding of Google Gemini, this project finds your household's "Energy Twins" and tells you why your usage patterns are similar or different.
+
+## 👥 Team Members
+
+- Harshitha Srinivas [Kaggle Profile](https://www.kaggle.com/harshithasrini)
+- Praveen G [Kaggle Profile](https://www.kaggle.com/praveengv)
+- Naga Vishnu Kanth Irukulapati [Kaggle Profile](https://www.kaggle.com/nagavishnukanthi)
 
 ## 🔍 The Problem: Drowning in Data, Starving for Context
 
@@ -17,62 +29,53 @@ Smart meters promise granular insights, tracking energy use down to the hour or 
 - ☀️ Season: Context for usage patterns.
 - 👨‍👩‍👧‍👦 Household Size: A major factor in demand.   
 
-But rows upon rows of this data often lead to more confusion than clarity. How do you know if your AC usage on a hot August day was typical for a family of four in your climate zone? 
+But, rows upon rows of this data often lead to more confusion than clarity. How do you know if your AC usage on a hot August day was typical for a family of four in your climate zone? 
 
 Traditional comparisons often rely on crude filters (e.g., same month), missing the subtle interplay of factors that define a household's energy signature.
-
-![image](https://github.com/user-attachments/assets/a76dde97-9931-4739-83cb-0b6fdb9cf19e)
+<p align=center>
+<img src="https://github.com/user-attachments/assets/a76dde97-9931-4739-83cb-0b6fdb9cf19e" />
+</p>
 
 ## 🤖 Solution: Finding Your "Energy Twins" with AI
 
 **Watt-Seer-Compare** tackles this challenge head-on. It doesn't just filter data; it understands it. Here’s how:
 
-Smart Summaries: We first distill the flood of raw data into concise, informative monthly summaries for each home, capturing total usage, temperature context, seasonality, household size, and key appliance contributions.
+<img width="830" alt="Screenshot 2025-04-19 at 3 23 27 PM" src="https://github.com/user-attachments/assets/f64f7356-7ced-4606-bbdf-52afc2226d4e" />
+ 
+*Smart Summaries:* We first distill the flood of raw data into concise, informative monthly summaries for each home, capturing total usage, temperature context, seasonality, household size, and key appliance contributions.
 
-Semantic Understanding (Gemini Embeddings): This is where the magic happens. We use Google Gemini's text-embedding-004 model to convert these textual summaries into rich numerical representations (embeddings). These aren't just numbers; they capture the semantic meaning and context of each household's monthly energy story.
+*Semantic Understanding (Gemini Embeddings):* This is where the magic happens. We use Google Gemini's text-embedding-004 model to convert these textual summaries into rich numerical representations (embeddings). These aren't just numbers; they capture the semantic meaning and context of each household's monthly energy story.
 
-Finding Your Peers (Cosine Similarity): With embeddings, we can mathematically compare how "alike" different households are based on their entire energy profile for the month using cosine similarity. This allows us to find the homes that are most similar to yours – your "Energy Twins."
+*Finding Your Peers (Cosine Similarity):* With embeddings, we can mathematically compare how "alike" different households are based on their entire energy profile for the month using cosine similarity. This allows us to find the homes that are most similar to yours – your "Energy Twins"
 
-Visual Comparisons: We generate clear, intuitive plots:
-Your home's appliance breakdown (pie chart).
-Your total usage vs. the average of your Energy Twins (bar chart).
-Your total usage vs. each individual Energy Twin (bar chart).
-Your top appliance usage vs. the average of your Twins (grouped bar chart).
+*Visual Comparisons:* We generate clear, intuitive plots:
+- Your home's appliance breakdown (pie chart).
+- Your total usage vs. the average of your Energy Twins (bar chart).
+- Your total usage vs. each individual Energy Twin (bar chart).
+- Your top appliance usage vs. the average of your Twins (grouped bar chart).
 
-AI Explanation (Gemini LLM): Numbers and plots are great, but why are you similar or different? We feed your summary and your Twins' summaries into Gemini (gemini-2.0-flash), prompting it to analyze the nuances and generate a plain-English explanation comparing your profile to your closest peers.
-
-&lt;center>
-[Diagram: A flowchart illustrating the process: Raw Data -> Monthly Summary -> Gemini Embedding -> Cosine Similarity -> Find "Energy Twins" -> Generate Plots -> Gemini LLM Explanation -> User Insight.]
-&lt;/center>
+*AI Explanation (Gemini LLM):* Numbers and plots are great, but why are you similar or different? We feed your summary and your Twins' summaries into Gemini (gemini-2.0-flash), prompting it to analyze the nuances and generate a plain-English explanation comparing your profile to your closest peers.
 
 ## 📊 Example Output: Your Energy Story, Visualized & Explained
-Imagine you input your Home ID (say, 66) and the month (2023-08). Watt-Seer-Compare gets to work and presents:
+Imagine you input your Home ID (say, 34) and the month (2023-06). Watt-Seer-Compare gets to work and presents:
 
 1. Your Home's Profile:
 
-<img width="619" alt="Screenshot 2025-04-17 at 5 20 17 PM" src="https://github.com/user-attachments/assets/5d1d945d-1c70-4eef-9c8f-dc48a075de05" />
-
-Caption: Target Home 66 - Appliance Energy Breakdown (2023-08)
+<img width="586" alt="Screenshot 2025-04-19 at 10 47 05 AM" src="https://github.com/user-attachments/assets/dbecd19d-6dba-48ba-9877-14a7dfded733" />
 
 2. Comparison Context:
+   
+<img width="456" alt="Screenshot 2025-04-19 at 10 53 28 AM" src="https://github.com/user-attachments/assets/f41fb619-612f-4759-8162-c28f2db4f336" />
 
-<img width="503" alt="Screenshot 2025-04-17 at 5 20 30 PM" src="https://github.com/user-attachments/assets/039d188e-5b03-4139-97e6-741d187b9f96" />
+<img width="983" alt="Screenshot 2025-04-19 at 10 54 06 AM" src="https://github.com/user-attachments/assets/0c53651f-48f4-49f8-94e3-b41bd538e103" />
 
-Caption: Total Monthly Energy Comparison (2023-08) - Target vs. Average Similar
-
-<img width="698" alt="Screenshot 2025-04-17 at 5 20 40 PM" src="https://github.com/user-attachments/assets/fcdcb405-c3d7-4bdd-8541-e4a98658b401" />
-
-Caption: Target vs. Individual Similar Homes - Total Monthly Energy (2023-08)
-
-<img width="788" alt="Screenshot 2025-04-17 at 5 21 11 PM" src="https://github.com/user-attachments/assets/7641a98b-ce55-4c22-ac90-cf736dc04e91" />
-
-Caption: Comparison of Top Appliance Usage (2023-08) - Target vs. Average Similar
+<img width="770" alt="Screenshot 2025-04-19 at 10 54 33 AM" src="https://github.com/user-attachments/assets/32455602-2fd0-4e95-b224-d61a8320cd38" />
 
 3. The AI Analyst's Take:
 
- LLM Comparison Summary:
+*LLM Comparison Summary:*
 
-Home 66 exhibits an energy consumption profile in August 2023 that is highly similar to homes 46, 131, and 124, primarily due to comparable total energy usage (around 30-33 kWh), similar seasonal context (Summer), and the significant contribution of air conditioning... While the household size is comparable across the homes, some key differences exist. Home 46 has a slightly larger household. Homes 46 and 131 also report heater usage, while Home 124's energy consumption is driven more by microwave and computer usage than air conditioning...
+Home 34's energy consumption profile for June 2023 is highly similar to several other homes, primarily due to similar household sizes, seasonal context, and reliance on both heating and air conditioning. These homes exhibit total energy consumption within a relatively narrow range of 30 to 37 kWh. While the overall patterns are alike, variations in average temperature lead to differences in the specific usage of heating and cooling appliances. Furthermore, lifestyle differences are reflected in the varying consumption of appliances like lights, washing machines, and ovens, contributing to subtle distinctions between the homes despite their high similarity scores. The lower similarity homes have different household sizes, some being smaller and one being larger, and also have a wider range of temperatures and total consumption, contributing to their lower similarity scores.
 
 Suddenly, your energy usage isn't just a number; it's a narrative placed within the context of genuinely comparable households.
 
@@ -125,48 +128,66 @@ response = client.models.generate_content(model=model_name, contents=prompt, ...
 ## ✨ Why This Matters: Beyond Simple Filters
 ### This approach offers significant advantages:
 
-Nuanced Similarity: Embeddings capture complex relationships between factors (temperature, appliance use, household size) that simple filters miss. An "Energy Twin" found this way shares a more holistic usage pattern.   
+- **Deep Contextual Similarity:** Embeddings capture complex relationships between factors (temperature, appliance use, household size) that simple filters miss. An "Energy Twin" found this way shares a more holistic usage pattern.   
 
-Contextual Explanations: The LLM doesn't just state facts; it synthesizes information from multiple summaries to explain why similarities or differences exist, providing actionable context.
+- **Semantic Understanding:** The LLM doesn't just state facts; it synthesizes information from multiple summaries, not just isolated numbers to explain why similarities or differences exist, providing actionable context.
 
-Data-Driven Discovery: You might find your home is similar to others for unexpected reasons, uncovering potential inefficiencies or validating your energy-saving efforts.
+- **Data-Driven Discovery:** You might find your home is similar to others for unexpected reasons, uncovering potential inefficiencies or validating your energy-saving efforts.
 
 ## 🔮 Limitations & Future Directions..
 
 Watt-Seer-Compare provides powerful context, but like any analysis, it has boundaries:
 
-Data Dependency: The quality and granularity of the input smart meter data are crucial.
+- **Data Dependency:** Accuracy hinges on detailed, reliable smart meter data.
 
-Dataset Bias: Comparisons are only as good as the diversity of homes within the dataset.
+- **Dataset Scope:** Comparisons are limited to the homes within the dataset.
 
-Model Evolution: AI models change; prompts and interpretations may need adjustments over time.
+- **Dataset Realism:** The current dataset demonstrates the AI methodology but may not perfectly capture the full complexity and real-time variations of actual household energy consumption. 
+
+- **Model Evolution:** AI models change; prompts and interpretations may need adjustments over time.
 
 What's Next?
-Integrating real-time data streams.
+- Integrating real-time data streams. Adjusting for temperature variations for even fairer comparisons.
 
-Adding energy cost analysis and prediction.
+- Adding energy cost analysis and prediction.
 
-Incorporating user feedback to refine similarity.
+- Incorporating user feedback to refine similarity.
 
-Generating personalized energy-saving recommendations based on comparison insights.
+- Generating personalized energy-saving recommendations based on comparison insights.
 
-Expanding to use multimodal inputs (like scanned bills, similar to the original Watt-Seer concept).
+- Expanding to use multimodal inputs (like scanned bills, similar to the original Watt-Seer concept).
 
 ## 🤝 From Numbers to Narratives: 
-Understand Your Energy Story
+### Understand Your Energy Story
 
 Stop wondering in the dark. By finding your "Energy Twins", combining detailed data, semantic AI, visualizations, and natural language explanations, Watt-Seer-Compare demonstrates how AI can transform rows of energy data into a meaningful conversation about consumption patterns and empowers you to understand your unique energy story.
 
-Ready to see how you stack up?
+Ready to see how you stack up and meet your Energy Twins?
 
 ## 🔗 Try Watt-Seer-Compare Yourself!
 
-👉 View the Watt-Seer-Compare Kaggle Notebook
-(Replace # [Link-To-Your-Kaggle-Notebook] with the actual public URL)
+### 👉 View the Project: 
+* [Kaggle](https://www.kaggle.com/code/praveengv/capstone-watt-seer-compare)
+* [GitHub](https://github.com/suresh-srinivas/Watt-Seer-Blog-Gen-AI-Intensive-Course-Capstone-2025Q1/blob/main/docs/watt-seer-compare.md)
+* [Youtube](https://www.youtube.com/watch?v=FThWDAUClWs)
+
+![image](https://github.com/user-attachments/assets/ab1d3cd8-bfae-4f8a-a761-12d4b4573726)
 
 Explore the code, run it with the sample data, and imagine plugging in your own smart meter readings. Discover your own "Energy Twins" and gain clarity on your consumption.
 
 Your energy data holds insights waiting to be revealed. Let AI help you listen.
 
 
-Sources and related content
+## 📚 Sources and Related Content
+**Dataset:** [Smart Home Energy Consumption Dataset on Kaggle](https://www.kaggle.com/datasets/mexwell/smart-home-energy-consumption)
+
+**Concepts:**
+- Embeddings, Vector Search and Cosine Similarity Explained - [Click here](https://www.kaggle.com/code/markishere/day-2-embeddings-and-similarity-scores)
+- Long Context Understanding - [Click here](https://www.kaggle.com/code/markishere/day-1-evaluation-and-structured-output)
+- Prompting - [Click here](https://www.kaggle.com/code/markishere/day-2-embeddings-and-similarity-scores)
+- Retrieval Augmented Generation(RAG) - [Click here](https://www.kaggle.com/code/markishere/day-2-document-q-a-with-rag)
+
+---
+© 2025 Harshitha Srinivas
+
+Questions/Feedback? Post your questions via [Kaggle Comments](https://www.kaggle.com/code/praveengv/capstone-watt-seer-compare/comments) | or open an issue on our <a href="https://github.com/suresh-srinivas/Watt-Seer-Blog-Gen-AI-Intensive-Course-Capstone-2025Q1/issues" style="display: inline-flex; align-items: center; text-decoration: none;"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" width="16" height="16" style="vertical-align: middle; margin-right: 4px;"/>GitHub Issues</a>
