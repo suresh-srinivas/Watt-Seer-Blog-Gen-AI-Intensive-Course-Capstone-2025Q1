@@ -71,6 +71,14 @@ Users ask plain English questions; AI runs the appropriate code and replies in c
 
 ---
 
+## 🎥 Project Walkthrough: Watch Our Energy-Saving Innovation in Action 🌍
+
+[![Watch the video](https://img.youtube.com/vi/xWRcOQk_glU/hqdefault.jpg)](https://youtu.be/xWRcOQk_glU)
+
+💚 Click the image above and *Discover how “Watt Seer Household” empowers families to track their energy usage, reduce costs, and contribute to a greener planet — all with the help of AI.* 💕
+
+---
+
 ## 💻 Try Watt-Seer-Household Yourself!
 🔗 To view the Watt-Seer-Household Kaggle Notebook 👉 [click here!](https://www.kaggle.com/code/arushitariyal/watt-seer-household)
 
