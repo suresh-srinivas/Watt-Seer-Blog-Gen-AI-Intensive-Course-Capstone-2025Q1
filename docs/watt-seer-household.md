@@ -73,7 +73,7 @@ Users ask plain English questions; AI runs the appropriate code and replies in c
 
 ## 🎥 Project Walkthrough: Watch Our Energy‑Saving Innovation in Action 🌍
 
-[![Watch the video](https://img.youtube.com/vi/xWRcOQk_glU/hqdefault.jpg)](https://youtu.be/xWRcOQk_glU)
+[![Watch the video](https://img.youtube.com/vi/Mrld6CWXUtg/hqdefault.jpg)](https://youtu.be/Mrld6CWXUtg)
 
 💚 Click the image above and *Discover how “Watt Seer Household” empowers families to track their energy usage, reduce costs, and contribute to a greener planet — all with the help of AI.* 💕
 
