@@ -61,6 +61,9 @@ On the other hand, millions of Americans only have **paper bills** with **monthl
 
 ## 📉 Ed's Consumption on a Cold Week
 
+
+<img src="assets/images/energy-graph.png" width="600" alt="Energy Graph">
+
 ![Energy Graph](https://suresh-srinivas.github.io/Watt-Seer-Blog-Gen-AI-Intensive-Course-Capstone-2025Q1/assets/images/energy-graph.png)
 
 
