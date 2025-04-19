@@ -1,9 +1,9 @@
 ---
-layout: post
 title: Gen AI Intensive Course Capstone 2025Q1
 date: 2015-04-10 15:09:00
 description: Kaggle Capstone 2025
 tags: formatting code
+layout: default
 categories: blog
 featured: true
 ---
