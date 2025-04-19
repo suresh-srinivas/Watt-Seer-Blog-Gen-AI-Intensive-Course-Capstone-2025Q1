@@ -1,7 +1,7 @@
 
 # ⚡ Watt-Seer Capstone Projects
 
-This Capstone Project is part of the **5-day Gen AI Intensive Course with Google**, which took place from **Monday, March 31 – Friday, April 4, 2025**.  
+These Capstone Projects are part of the **5-day Gen AI Intensive Course with Google**, which took place from **Monday, March 31 – Friday, April 4, 2025**.  
 Participants collaborated on applying Generative AI to the problem of understanding and optimizing residential energy consumption using real-world and simulated datasets.
 
 ---
@@ -13,7 +13,7 @@ Participants collaborated on applying Generative AI to the problem of understand
 | [Watt-Seer-Coach](./watt-seer-coach.md) | Personalized Energy Coach | Ashwini Apte, Rao Parasa, Suresh Srinivas |
 | [Watt-Seer-Compare](./watt-seer-compare.md) | Home vs Others | Praveen, Harshita, Naga |
 | [Watt-Seer-Household](./watt-seer-household.md) | Household Behavior Analysis | Arushi, Eric, Lan |
-| [Watt-Saver](./watt-saver.md) | Recommender for Lower Bills | Jim, Olamide, Saad |
+| [Watt-Saver](./watt-saver.md) | Recommender for Lower Bills | Jim, Jonathan, Olamide, Saad |
 
 ---
 
