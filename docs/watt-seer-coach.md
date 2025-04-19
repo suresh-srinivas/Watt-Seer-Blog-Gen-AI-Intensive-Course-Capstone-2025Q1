@@ -61,7 +61,7 @@ On the other hand, millions of Americans only have **paper bills** with **monthl
 
 ## 📉 Ed's Consumption on a Cold Week
 
-![Energy Usage Graph](images/energy-graph.png)
+![Energy Usage Graph](assets/images/energy-graph.png)
 
 > "You used 237 kWh on January 16 alone," Anita pointed out. "AI root caused it and it Looks like your heat pump switched to resistance mode during the cold snap."
 
