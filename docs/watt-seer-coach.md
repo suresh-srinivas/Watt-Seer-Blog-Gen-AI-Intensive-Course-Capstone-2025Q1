@@ -57,6 +57,9 @@ On the other hand, millions of Americans only have **paper bills** with **monthl
 ✅ Extraction of key details (kWh, dates, cost) from Jerry's scanned bill  
 ✅ AI-generated comparisons and suggestions for energy-saving actions
 
+
+[![Watch the video](https://img.youtube.com/vi/ED8UNHP2eHo/hqdefault.jpg)](https://youtu.be/ED8UNHP2eHo)
+
 ---
 
 ## 📉 Ed's Consumption on a Cold Week
@@ -64,7 +67,46 @@ On the other hand, millions of Americans only have **paper bills** with **monthl
 
 ![Energy Usage Graph](assets/images/energy-graph.png)
 
-> "You used 237 kWh on January 16 alone," Anita pointed out. "AI root caused it and it Looks like your heat pump switched to resistance mode during the cold snap."
+> "You used 237 kWh on January 16 alone," Anita pointed out. "AI root caused it and it Looks like your heat pump switched to resistance mode during the cold snap." Here's what AI figured out. 
+
+### ❄️ How Temperature Explains High Energy Usage
+
+"You used 237 kWh on January 16 alone," Anita pointed out.  
+"AI root caused it and it looks like your heat pump switched to resistance mode during the cold snap."
+
+Here’s what AI figured out:
+
+- **Sustained Deep Freeze**  
+  The most crucial factor is the consistently low temperatures from Jan 13th to 16th.  
+  - Average daily temperatures ranged from **12.4°F to 15.5°F**
+  - Minimums dropped into **single digits (6.6°F)** and low teens  
+  - Maximum temperatures rarely exceeded **32°F (freezing)** during this stretch
+
+- **Constant Heating Demand**  
+  When outside temperatures are extremely low:  
+  - Homes **lose heat rapidly** to the environment  
+  - Heating systems must run **almost continuously** to maintain indoor comfort  
+  - The colder it is, the faster the **heat loss** and higher the **energy consumption**
+
+- **Auxiliary/Emergency Heat Activation (Likely Culprit)**  
+  Most heat pumps have a **secondary heating source** — electric resistance heat strips — for very cold conditions.  
+  - Heat pumps become **inefficient below ~20–30°F**, depending on the model  
+  - When the thermostat calls for a rapid temp increase or hits the efficiency threshold, the system **activates auxiliary heat**  
+  - **Electric resistance heat** is highly energy-intensive (like running a giant toaster!)  
+  - The **spike to over 200 kWh on Jan 16th** strongly indicates prolonged use of electric resistance heating
+
+- **Cumulative Effect**  
+  After several days of freezing temperatures (Jan 13–15):  
+  - The **thermal mass** of your home (walls, floors, furniture) cools down significantly  
+  - More energy is required to **reheat the space**, resulting in a massive load on Jan 16th
+
+- **Jan 17th Comparison**  
+  - Usage dropped to **119 kWh** — still high, but notably lower  
+  - This aligns with **warmer temperatures**:  
+    - Average: **29.6°F**  
+    - Max: **44.5°F**  
+  - Heating systems likely ran **less frequently**  
+  - The need for **auxiliary heat was reduced or eliminated**
 
 ---
 
