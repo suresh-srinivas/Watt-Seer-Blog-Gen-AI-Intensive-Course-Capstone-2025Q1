@@ -1148,7 +1148,7 @@ graph_builder.add_edge("action", "agent")
 # Compile the graph
 graph = graph_builder.compile()
 ```
-The grapg workflow
+The graph workflow
 
 ![graph](/docs/Image/longraph.png)
 
