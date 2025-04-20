@@ -211,10 +211,11 @@ If you've got a folder of bills — or a zip of usage data — maybe it's your t
 ## 🧠 Acknowlegements
 - We collaborated in 4 seperate projects with Zoom calls, discord, and Kaggle Group shared notebook. We would like to acknowledge all the other team members in those projects: Arushi, Eric, Lan, Harshita, Praveen, Naga, Jim, Lamide, Saad, Jonathan. Special thanks to [Arushi Tariyal](https://www.kaggle.com/arushitariyal) for going above and beyond helping us and others as well.
 
-## 🔗 Try Watt-Seer Yourself
+## 🔗 How you can take Action
 
 
 [🔗 View on Kaggle](https://www.kaggle.com/code/sureshsrinivas/watt-seer-personalized-energy-coach)  
+[🔗 Join the Solvers Collaborative Substack](https://solverscollaborative.substack.com/)
 
 Upload your own usage data. Or just bring a photo of your bill.  
 Let the AI do the explaining.  
