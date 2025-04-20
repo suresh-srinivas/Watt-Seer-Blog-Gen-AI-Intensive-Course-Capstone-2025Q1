@@ -62,7 +62,7 @@ On the other hand, millions of Americans only have **paper bills** with **monthl
 Check out the Video
 [![Watch the video](https://img.youtube.com/vi/ED8UNHP2eHo/hqdefault.jpg)](https://youtu.be/ED8UNHP2eHo)
 
-Check out the PDF [technical document that dives deep into the GenAI approach of solving the problem](watt-seer-coach-technical.pdf)  
+Check out the [technical document that dives deep into the GenAI approach of solving the problem](https://medium.com/@apte.ashwini99/title-watt-seer-personalized-energy-coach-genai-approach-2ad5b54b0b05)
 
 ---
 
@@ -133,7 +133,7 @@ Gemini Vision read Jerry's scanned bill and returned:
 
 ## 💬 Technical details: Use case, GenAI capabilities and lessons learned
 
-Refer to the PDF [technical document that dives deep into the GenAI approach of solving the problem](watt-seer-coach-technical.pdf)  
+Refer to the [technical document that dives deep into the GenAI approach of solving the problem](https://medium.com/@apte.ashwini99/title-watt-seer-personalized-energy-coach-genai-approach-2ad5b54b0b05)
 
 ---
 
