@@ -1,14 +1,14 @@
 ---
 title: Gen AI Intensive Course Capstone 2025Q1
-date: 2015-04-10 15:09:00
-description: Kaggle Capstone 2025
+date: 2015-04-20 09:33:00
+description: Gen AI Intensive Course Capstone 2025Q1
 tags: formatting code
 layout: default
 categories: blog
 featured: true
 ---
 # 🧠 Watt-Saver the Personalized Energy Coach
-![header](/Image/header.png)
+![header](/docs/Image/header.png)
 
 ## This is the blog for [Gen AI Intensive Course Capstone 2025Q1 Porject](https://www.kaggle.com/competitions/gen-ai-intensive-course-capstone-2025q1) which is part of [5-Day Gen AI Intensive Course with Google](https://rsvp.withgoogle.com/events/google-generative-ai-intensive_2025q1)
 
@@ -35,12 +35,12 @@ Instead of just visualizing data, Gemini responded with plain-language insights 
 This approach can scale to households or communities. Tools like Watt-Save use GenAI to suggest smarter energy use—helping people cut costs and reduce waste without needing technical skills.
 
 ## 👥 Team Members and Roles
-- [Jim](https://www.kaggle.com/jimkwikx)            - Lead developer and submitter
-- [Lamide](https://www.kaggle.com/olamidek)         - Few short prompt developer
-- [Saad Asghar](https://www.kaggle.com/saadasghar)  - Capability testing and Suggestions
-- [Jgar1597](https://www.kaggle.com/jgar1597)       - LongGraph agent developer
+- [Jim](https://www.kaggle.com/jimkwikx)            - Lead code, blog developer and project submitter
+- [Lamide](https://www.kaggle.com/olamidek)         - Few short prompt developer, Youtube video making
+- [Saad Asghar](https://www.kaggle.com/saadasghar)  - GenAI Capability tester
+- [Jgar1597](https://www.kaggle.com/jgar1597)       - LongGraph agent developer, Youtube video making
 
-## 🧠 Advisers
+## 🧠 Project Advisers
 - [SureshSrinivas](https://www.kaggle.com/sureshsrinivas)
 - [Arushi Tariyal](https://www.kaggle.com/arushitariyal)
 
@@ -48,9 +48,12 @@ This approach can scale to households or communities. Tools like Watt-Save use G
 
 [🔗Kaggle](https://www.kaggle.com/code/jimkwikx/jim-watt-saver-personalized-energy)
 
-[🔗Github](https://www.kaggle.com/code/jimkwikx/watt-saver-personalized-energy-jim?scriptVersionId=234800975) 
+[🔗Github](https://github.com/JimKw1kX/Watt-Seer-Blog-Gen-AI-Intensive-Course-Capstone-2025Q1/blob/main/Notebook/watt-saver-personalized-energy-jim.ipynb) 
 
 [🔗Colab](https://colab.research.google.com/drive/1_r5exsc9STtdv8GOyd5xIvDEgD5Q04iW?usp=sharing)   
+
+## 🎥 Youtube Video
+[🔗Youtube Video](https://www.youtube.com/watch?v=xchAEGdZtQw)
 
 # Why it is useful and people should care about❓
 
@@ -76,7 +79,7 @@ We start of by loading the two datasets
 
 We will use `pd.read_csv` to display both datasets and get a overview of them:
 
-![image2datasets](/Image/iamge-twodataasets.png)
+![image2datasets](/docs/Image/iamge-twodataasets.png)
 
 The data can be a bit challenging to interpret at a glance, so we'll use Generative AI to help make sense of it. Specifically, we'll leverage the Document Understanding capabilities from [Day2](https://www.kaggle.com/code/markishere/day-2-document-q-a-with-rag)'s colab, along with the Image Understanding features demonstrated in the [Bonus Day](https://www.kaggle.com/code/markishere/bonus-day-extra-api-features-to-try/notebook)'s notebook.
 
@@ -135,10 +138,10 @@ Markdown(summary)
 ```
 look at the following output, we can the the Gemini gave the overview of the datasets and some code snippets for analyzing them.
 
-![image3](/Image/iamge4.png)
+![image3](/docs/Image/iamge4.png)
 ✅ The model gave a very quick overview of the datasets and how should we analysis them by providing code snippets: 
 
-![image4](/Image/python-code-snippet.png)
+![image4](/docs/Image/python-code-snippet.png)
 🤖 What code does is:
 - Load Data: Reads both CSV and DAT files using pandas. Includes basic error handling for file loading.
 - Preprocessing Dataset 1 and Dataset 2
@@ -148,11 +151,11 @@ look at the following output, we can the the Gemini gave the overview of the dat
 - Identify High-Usage Appliances & Patterns:
 
 We can see the plot to have an quick grasp of the data and see Air conditioning and Heater have the highest energy consumption during the time period.
-![prompt-analysis](/Image/prompt-analysis.png)
+![prompt-analysis](/docs/Image/prompt-analysis.png)
 
 and outdoor tempture vs consumption
 
-![outdoor-tempture](/Image/Consumption-vs-outdoor-temp.png)
+![outdoor-tempture](/docs/Image/Consumption-vs-outdoor-temp.png)
 
 The second dataset is more meter data of a single household for one year on hourly basis and the other one is appliances of 500 households over multiple time period
 
@@ -160,7 +163,6 @@ We will  analysis this `energy_hourly_data_2024_meter2.dat` dataset to get the f
 
 
 ```python
-
 # Load with tab separator and column names
 df = pd.read_csv(
     "/kaggle/input/energy-data-meter-2/energy_hourly_data_2024_meter2.dat",
@@ -214,7 +216,7 @@ fig.suptitle("Daily Energy Consumption & Cost (Resampled from Hourly)", fontsize
 lines, labels = ax1.get_legend_handles_labels()
 ...
 ```
-![image2](/Image/image2.png)
+![image2](/docs/Image/Image2.png)
 
 ## 📌We can see there is a energy spike around 2024-01, and we need to figure out the reason that caused energy spike
 # Applying Image understadning
@@ -241,7 +243,7 @@ response = client.models.generate_content(
 )
 Markdown(response.text)
 ```
-![spike](/Image/spike.png)
+![spike](/docs/Image/spike.png)
 
 It had some guesses of the spike we will use Retrieval Augumented Generation(RAG) with Gemini for generating Summary and Insights and `image generation capability`
 
@@ -273,17 +275,14 @@ response = client.models.generate_content(
         response_modalities=['text','image']
     )
 )
-
-
 ```
 
-![image-gen](/Image/image-gen.png)
-![fixed-rate](/Image/fixed_rate.png)
+![image-gen](/docs/Image/Image-gen.png)
+![fixed-rate](/docs/Image/fixed_rate.png)
 
 The 3D image gave an overview of the enegery consumption and it text summrized the fixed rate,significant  variations, and suggestions (Identifying any seasonal trends driving higher consumption is also crucial for targeted reduction efforts.). So let's dig more by displaying summarized energy insight for the dataset
 
 ```python
-
 # we will create a matplotlib function
 def display_energy_insight(
     title: str,
@@ -293,8 +292,6 @@ def display_energy_insight(
     plot_column: str = None,
     plot_color: str = "skyblue"
 ):
-   
-
 .....
 
 # then list top energy consumption days 
@@ -313,11 +310,10 @@ summary_text = f"""
 - 💵 Cost Incurred: **${total_cost:.2f}**
 
 """
-      
 ```
 We can clearly see  the top 10 days consumption and costs
 
-![top-days](/Image/top-10-days.png)
+![top-days](/docs/Image/top-10-days.png)
 
 # Utilize Database
 
@@ -331,8 +327,8 @@ We will analyze this dataset `smart_home_energy_consumption_large.csv` and will 
 - Season
 - Household Size
 
-![smart_home_energy_consumption_large](/Image/smart_home_energy_consumption_large.png)
-![energy_hourly_data_2024_meter2.dat](/Image/energy_hourly_data_2024_meter2.dat.png)
+![smart_home_energy_consumption_large](/docs/Image/smart_home_energy_consumption_large.png)
+![energy_hourly_data_2024_meter2.dat](/docs/Image/energy_hourly_data_2024_meter2.dat.png)
 
 We save these two dateset in a database and created `energy_data` and `hourly_data` tables
 ```python
@@ -358,7 +354,6 @@ CREATE TABLE energy_data ( "Home ID" INTEGER, "Appliance Type" TEXT, "Energy Con
 CREATE TABLE hourly_data ( date DATE, start_time TEXT, end_time TEXT, consumption TEXT, provided_cost TEXT )
 
 /* 3 rows from hourly_data table: date start_time end_time consumption provided_cost None end_time consumption provided_cost start_minus_prev_end 2024-01-01 2024-01-01 01:00:00-08:00 0.377 0.06257069 None 2024-01-01 2024-01-01 02:00:00-08:00 0.355 0.05891935 0:00:00 */
-
 ```
 ## Implement Shot prompt to generate SQL queries
 we will implement shot prompt to generate SQL queries to get an overview of the database. First we define split 24 hours to 4 time blocks like below for a clear overview of energy consumption across a whole day 
@@ -369,16 +364,21 @@ we will implement shot prompt to generate SQL queries to get an overview of the 
 18:00–24:00 → 18-24
 ```
 
-Then use define the pythonon query to query SQL database regarding all the factors and group them 
+Then use define the `JSON` query to query SQL database regarding all the factors and group them 
 
 ```python
-few_shot_prompt = f"""You are a SQL query generator. Parse natural language English questions into valid SQL query pythonON for the `energy_data` table.
+few_shot_prompt = f"""You are a SQL query generator. Parse natural language English questions into valid SQL query JSON for the `energy_data` table.
 
 The `energy_data` table has the following schema:
 - Home ID (INTEGER)
 - Appliance Type (TEXT)
 - Energy Consumption (kWh) (REAL)
-......
+- Time (TEXT, format 'HH:MM')
+- Date (TEXT, format 'YYYY-MM-DD')
+- Outdoor Temperature (°C) (REAL)
+- Season (TEXT)
+- Household Size (INTEGER)
+
 Example rows:
 
 {Example_rows}
@@ -389,7 +389,7 @@ Time blocks of the day are defined as:
 - 12:00–18:00 → '12-18'
 - 18:00–24:00 → '18-24'
 
-Return your output in **valid pythonON** format with the SQL query inside.
+Return your output in **valid JSON** format with the SQL query inside.
 
 ---
 
@@ -400,8 +400,8 @@ For example, for 'Air Conditioning', what time blocks consume the most and least
 
 ---
 
-### pythonON Response:
-```pythonon
+### JSON Response:
+```json
 {{
   "query": "
     SELECT 
@@ -420,34 +420,15 @@ For example, for 'Air Conditioning', what time blocks consume the most and least
 }}
 
 """
-
 ```
 Then the prompt would be 
 
 ```python
-import re
 ask_query = """
 I want to find out what are the times with the highest and lowest Energy Consumption (kWh) in the energy_data table. 
 Use ORDER BY and LIMIT to optimize the query. Please filter by a specific appliance type and use Energy Consumption (kWh) AS Total_Energy_Consumption keyword. 
 add GROUP BY Time_Block, "date","Household Size", "Outdoor Temperature (°C)", "Season", "Appliance Type", without   WHERE `Appliance Type`, 
 user defined schemas from the `energy_data` tables are  Time_Block, "date","Household Size", "Outdoor Temperature (°C)", "Season", "Appliance Type"
-
-Time blocks are defined as:
-- 00:00–06:00 → '00-06'
-- 06:00–12:00 → '06-12'
-- 12:00–18:00 → '12-18'
-- 18:00–24:00 → '18-24'
-
-Use the `start_time` column to determine the hour and group the data accordingly. 
-Return the time block and the average of the `consumption` column as `Average_Consumption`, rounded to 3 decimal places. and  ROUND(AVG(provided_cost), 4) AS Average_Cost rounded to 3 decimal places
-Sort the output by time block.
-"""
-ask_query = """
-I want to find out what are the times with the highest and lowest Energy Consumption (kWh) in the energy_data table. 
-Use ORDER BY and LIMIT to optimize the query. Please filter by a specific appliance type and use Energy Consumption (kWh) AS Total_Energy_Consumption keyword. 
-add GROUP BY Time_Block, "date","Household Size", "Outdoor Temperature (°C)", "Season", "Appliance Type", without   WHERE `Appliance Type`, 
-user defined schemas from the `energy_data` tables are  Time_Block, "date","Household Size", "Outdoor Temperature (°C)", "Season", "Appliance Type"
-
 """
 
 response = client.models.generate_content(
@@ -459,16 +440,16 @@ response = client.models.generate_content(
     ),
     contents=[few_shot_prompt, ask_query])
 ```
-We got the following markdown outputs:
+We got the following SQL query printed as markdown format:
 
-![queries](/Image/sql-query.png)
+![queries](/docs/Image/sql-query.png)
 
 We got grouped output, that much easier to analyze the dataset
 ```python
 test_df = pd.read_sql_query(sql_query, conn)
 display(combined_result)
 ```
-![test_df](/Image/test_df.png)
+![test_df](/docs/Image/test_df.png)
 
 In order to further analyze it, we are storing it in database and creating a new table `grouped_energy_data` and `hourly_data`
 ```python
@@ -497,10 +478,10 @@ highest_result = highest.sort_values(by='Total_Energy_Consumption',ascending=Fal
 highest_result = highest_result.reset_index(drop=True)
 display(highest_result.head(10))
 ```
-![highest-consumption](/Image/highest-consumption.png)
+![highest-consumption](/docs/Image/highest-consumption.png)
 
 Same as lowest consumption 
-![lowest](/Image/lowerest.png)
+![lowest](/docs/Image/lowerest.png)
 
 We will create a simialr function to plot the data and compare `highest` and `lowest` enegy consumption for top 20 days
 
@@ -542,8 +523,8 @@ top_days_formatted = top_days.copy()
 """
 ....
 ````
-![top20](/Image/top20.png)
-![Compre](/Image/compre.png)
+![top20](/docs/Image/top20.png)
+![Compre](/docs/Image/compre.png)
 
 Form the results we can cleary see Aircondition 2 houre hold, between 18-24 in sprint has highest consumption
 Let ask GenAI to give some insights of the 2 compersing
@@ -571,7 +552,7 @@ response = client.models.generate_content(
 Markdown(response.text)
 ```
 
-![comapre](/Image/compare-insight.png)
+![comapre](/docs/Image/compare-insight.png)
 
 # 🤖 We now train a model to predict likelihood energy consumption and costs on real weather and temperature data
 
@@ -581,7 +562,7 @@ Markdown(response.text)
 combined_result.to_csv('/kaggle/working/combined_result.csv', index=False) 
 ```
 
-![dataset](/Image/datasettotrain.png)
+![dataset](/docs/Image/datasettotrain.png)
 
 ## Prepare a data loader
 
@@ -685,12 +666,12 @@ tf.keras.layers.Dense(1)
 ```
 - Output layer for liner regression:
 
-    $\hat{y} = \mathbf{w}^\top \mathbf{x} + b$.
+    **ŷ = wᵀx + b**
 
     - x = the input vector to the final layer (from the previous layer’s outputs)
     - w = weight vector (one weight per input)
     - b = bias
-    - $\hat{y}$ = predicted value (energy consumption)
+    - ŷ = predicted value (energy consumption)
 
 
 
@@ -718,8 +699,6 @@ model = tf.keras.Sequential([
         kernel_regularizer = tf.keras.regularizers.l2(0.001)),
         tf.keras.layers.Dropout(0.2),
 
-    
-    
     tf.keras.layers.Dense(1) # output layer for regression to caculate the weight and bias and predicted value (how well the traning perfroms)
 ])
 
@@ -771,7 +750,7 @@ The model stopped at Epoch 68/100 because the model can't learn anything anymore
 
 We see the model and traning summary for more details 
 
-![model-sum](/Image/model-summary.png)
+![model-sum](/docs/Image/model-summary.png)
 
 
 ```python
@@ -800,7 +779,7 @@ history = model.fit(
 
 As shown in the graph below, the model was successfully learning — the loss was decreasing over time due to gradient descent. However, the training stopped at step 68, where it reached a plateau on the validation set, indicating that learning had converged. As a result, the training process was halted early.
 
-![training-steps](/Image/traning-steps.png)
+![training-steps](/docs/Image/traning-steps.png)
 
 Lets check the model prediction against real data and see how it perfroms
 ```python
@@ -810,7 +789,6 @@ results_df = pd.DataFrame({
     'Predicted' : predictions.flatten() # flatten removes extra dimensions
 })
 display(results_df)
-
 ```
 Looks like it learned from traning data without overfitting too much as we applied drop out to prevent over fitting.
 ```c
@@ -850,11 +828,6 @@ def get_weather_data():
         .....
         ....
     # map time blocks of a day
-    # 00:00–06:00 → 0-6
-    # 06:00–12:00 → 6-12
-    # 12:00–18:00 → 12-18
-    # 18:00–24:00 → 18-24
-    
     def map_time_block(hour):
         if 0 <= hour < 6:
             return '00-06'
@@ -878,7 +851,7 @@ def get_weather_data():
    .....
 ```
 We will use this data for the model to predict
-![data-to-predict](/Image/data-to-predict.png)
+![data-to-predict](/docs/Image/data-to-predict.png)
 
 
 ```python
@@ -890,7 +863,7 @@ avg_temp_data['Estimated Cost ($)'] = predicted_consumption * 0.1734 # Fixed rat
 ```
 It displyed predicted energy comsuption estimated Cost
 
-![predicted-data](/Image/predicted-data.png)
+![predicted-data](/docs/Image/predicted-data.png)
 
 
 # Understanding Relationships in Energy Consumption Data
@@ -1022,15 +995,15 @@ data
 ```
 It provides actionable suggestions to reduce energy costs and on the prediction data :)
 
- ![actionble-s](/Image/actionble-suggestion2.png)
+ ![actionble-s](/docs/Image/actionble-suggestion2.png)
 
 
 # 💡 Watt-Saver - Your Personalized Energy Coach
 ## 🔍 An AI agent that user can ask questions with their own energy data by training
 
-## [LongGraph](https://www.kaggle.com/code/markishere/day-3-building-an-agent-with-langgraph/) Implementation with a Chat Agent ([Funciton calling](https://www.kaggle.com/code/markishere/day-3-function-calling-with-the-gemini-api ) + chat):
+## Below is the [LongGraph](https://www.kaggle.com/code/markishere/day-3-building-an-agent-with-langgraph/) Implementation with a Chat Agent ([Funciton calling](https://www.kaggle.com/code/markishere/day-3-function-calling-with-the-gemini-api ) + chat):
 
-## Prepare LongGraoh nodes, we using @tool decorator to execute the functions we define 
+## Prepare LongGraoh nodes, we using `@tool` decorator to execute the functions we define 
 ```python
 from collections.abc import Iterable
 from random import randint
@@ -1058,7 +1031,6 @@ def execute_query(sql: str) -> list[list[str]]:
 def model_prediction(sql: str) -> list[list[str]]:
     .....
     predict(get_weather_data())
-
 ```
 ## Define getting weather data function
 
@@ -1094,8 +1066,7 @@ def get_weather_forecast(latitude: float = 37.87, longitude: float = -122.27, da
         "forecast_days": days
     }
    .....
-        return forecast_string
-
+    return forecast_string
 ```
 # Define the state for our agent graph
 It's a Python dictionary (TypedDict) that stores:
@@ -1177,9 +1148,9 @@ graph_builder.add_edge("action", "agent")
 # Compile the graph
 graph = graph_builder.compile()
 ```
-The grapg workflow
+The graph workflow
 
-![graph](/Image/longraph.png)
+![graph](/docs/Image/longraph.png)
 
 
 ## 🤖 Gemini Chat Agent
@@ -1246,9 +1217,9 @@ while True:
     *   What was the weather prediction on check the `avg_temp_data` table.
     *   What was the weather prediction from the `avg_temp_data` schema and the costs and energy consumption, what the optimiztion you recommand?
 
-![output](/Image/output1.png)
-![output](/Image/output2.png)
-![output](/Image/output3.png)
+![output](/docs/Image/output1.png)
+![output](/docs/Image/output2.png)
+![output](/docs/Image/output3.png)
 
 # 🔴 Limitations
 
@@ -1403,3 +1374,14 @@ These temperature values directly influence the predicted energy consumption, pa
 Huge thanks to the incredible moderators and instructors [Paige Bailey](https://www.linkedin.com/in/dynamicwebpaige/), [Anant Nawalgaria](https://www.linkedin.com/in/anant-nawalgaria/), and the team at [Google DeepMind](https://www.linkedin.com/company/googledeepmind/) for the opportunity to participate a high-impact, enriching learning & developing experience!
 
 Thanks for reading and every contributor for the project!
+
+# 📖 How It Came to Be:
+
+The idea for Watt-Seer began when [Suresh Srinivas](https://www.kaggle.com/sureshsrinivas)
+posted a note in the Kaggle Discord during the Gen AI Intensive Course, inviting participants to explore AI-powered approaches to home energy efficiency. 
+
+To support everyone, Suresh mentored and guided participants in self-organizing into four collaborative teams, based on shared interests and skillsets.
+
+## Link to the projects under the Watt-Seer umbrella 👇:
+
+[🔗 Watt-Seer Capstone Projects](https://suresh-srinivas.github.io/Watt-Seer-Blog-Gen-AI-Intensive-Course-Capstone-2025Q1/)
