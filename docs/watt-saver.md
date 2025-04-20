@@ -666,7 +666,7 @@ tf.keras.layers.Dense(1)
 ```
 - Output layer for liner regression:
 
-    $\hat{y} = \mathbf{w}^\top \mathbf{x} + b$.
+    **ŷ = wᵀx + b**
 
     - x = the input vector to the final layer (from the previous layer’s outputs)
     - w = weight vector (one weight per input)
