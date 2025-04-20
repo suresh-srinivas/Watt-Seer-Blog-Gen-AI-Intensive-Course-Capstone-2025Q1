@@ -5,7 +5,6 @@ layout: default
 # Watt-Seer - Personalized Energy Coach
 ## This is the blog for [Gen AI Intensive Course Capstone 2025Q1 Project](https://www.kaggle.com/competitions/gen-ai-intensive-course-capstone-2025q1) which is part of [5-Day Gen AI Intensive Course with Google](https://rsvp.withgoogle.com/events/google-generative-ai-intensive_2025q1)
 
- A storytelling case study on using Kaggle + Gemini to compare home energy data and extract insights from scanned bills.
 
 ## 👥 Team Members
 
@@ -13,8 +12,22 @@ layout: default
 - [Suresh Srinivas](https://www.kaggle.com/sureshsrinivas)
 - [Rao Parasa](https://www.kaggle.com/raoparasa) 
 
-# 
-# 🔋 Watt-Seer - Personalized Energy Coach: How Three Neighbors Used AI to Understand Their Energy Usage
+# 🔍 The Problem: Understanding Home Energy Use
+
+Most people don't understand what's driving their energy bills. Even when they have access to hourly or daily usage, it's just rows of numbers.
+
+On the other hand, millions of Americans only have **paper bills** with **monthly totals**, and no tools to compare or analyze.
+
+**Gen AI, especially multimodal models like Gemini, can bridge this gap — turning structured data and unstructured images into meaning.**
+
+📖 **Want to learn more?**  
+Please read our [Medium blog](https://medium.com/@apte.ashwini99/title-watt-seer-personalized-energy-coach-genai-approach-2ad5b54b0b05) that deep dives into the problem, the GenAI approach, and its capabilities in solving this challenge — with a special focus on the Watt-Seer use case.
+
+
+And now a storytelling case study on using Kaggle + Gemini to compare home energy data and extract insights from scanned bills.
+
+
+# 🔋 Watt-Seer - Personalized Energy Coach Use Case: How Three Neighbors Used AI to Understand Their Energy Usage
 
 In a quiet cul-de-sac in Portland, three retired neighbors found themselves in a uniquely 21st-century situation: they wanted to understand their electric bills — and only one of them knew how to code.
 ![Neighbors Collaborating on Energy](assets/images/Neighborhood.png)
@@ -37,15 +50,6 @@ Together, they launched a weekend project to build something simple, visual, and
 
 ---
 
-## 🔍 The Problem: Understanding Home Energy Use
-
-Most people don't understand what's driving their energy bills. Even when they have access to hourly or daily usage, it's just rows of numbers.
-
-On the other hand, millions of Americans only have **paper bills** with **monthly totals**, and no tools to compare or analyze.
-
-**Gen AI, especially multimodal models like Gemini, can bridge this gap — turning structured data and unstructured images into meaning.**
-
----
 
 ## 🛠️ What They Built: Watt-Seer Personalization Coach
 
@@ -61,8 +65,7 @@ On the other hand, millions of Americans only have **paper bills** with **monthl
 
 Check out the Video
 [![Watch the video](https://img.youtube.com/vi/ED8UNHP2eHo/hqdefault.jpg)](https://youtu.be/ED8UNHP2eHo)
-
-Check out the PDF [technical document that dives deep into the GenAI approach of solving the problem](watt-seer-coach-technical.pdf)  
+ 
 
 ---
 
@@ -129,11 +132,9 @@ Gemini Vision read Jerry's scanned bill and returned:
 
 > " Ed's electric resistance heating likely caused the winter spike. Consider supplemental heating or sealing air leaks."
 
----
+## Gen AI Capabilities
 
-## 💬 Technical details: Use case, GenAI capabilities and lessons learned
-
-Refer to the PDF [technical document that dives deep into the GenAI approach of solving the problem](watt-seer-coach-technical.pdf)  
+Anita tells Ed and Jerry that she used a number of Gen AI capabilities such as Document Understanding, Few Shot Prompting, Evaluation, and Image Understanding while building this Kaggle Notebook.
 
 ---
 
