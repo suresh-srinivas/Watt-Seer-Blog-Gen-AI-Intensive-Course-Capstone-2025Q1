@@ -671,7 +671,7 @@ tf.keras.layers.Dense(1)
     - x = the input vector to the final layer (from the previous layer’s outputs)
     - w = weight vector (one weight per input)
     - b = bias
-    - $\hat{y}$ = predicted value (energy consumption)
+    - ŷ = predicted value (energy consumption)
 
 
 
