@@ -3,7 +3,7 @@ title: "Watt-Seer: How Three Neighbors Used AI to Understand Their Energy Usage"
 layout: default
 ---
 # Watt-Seer - Personalized Energy Coach
-## This is the blog for [Gen AI Intensive Course Capstone 2025Q1 Porject](https://www.kaggle.com/competitions/gen-ai-intensive-course-capstone-2025q1) which is part of [5-Day Gen AI Intensive Course with Google](https://rsvp.withgoogle.com/events/google-generative-ai-intensive_2025q1)
+## This is the blog for [Gen AI Intensive Course Capstone 2025Q1 Project](https://www.kaggle.com/competitions/gen-ai-intensive-course-capstone-2025q1) which is part of [5-Day Gen AI Intensive Course with Google](https://rsvp.withgoogle.com/events/google-generative-ai-intensive_2025q1)
 
  A storytelling case study on using Kaggle + Gemini to compare home energy data and extract insights from scanned bills.
 
@@ -17,6 +17,8 @@ layout: default
 # 🔋 Watt-Seer - Personalized Energy Coach: How Three Neighbors Used AI to Understand Their Energy Usage
 
 In a quiet cul-de-sac in Portland, three retired neighbors found themselves in a uniquely 21st-century situation: they wanted to understand their electric bills — and only one of them knew how to code.
+![Neighbors Collaborating on Energy](assets/images/Neighborhood.png)
+
 
 ## 👨‍🔧 The Engineer and the Salesman
 
@@ -49,7 +51,7 @@ On the other hand, millions of Americans only have **paper bills** with **monthl
 
 - Ed provided the **hourly energy consumption data** from his utility.
 - Jerry gave Anita a **photo of his electric bill**.
-- Anita spun up a Kaggle notebook, loaded Pandas, and brought in Gemini Vision.
+- Anita spun up a Kaggle notebook, loaded Pandas, and brought in Gemini.
 
 ### The Result:
 
@@ -57,8 +59,9 @@ On the other hand, millions of Americans only have **paper bills** with **monthl
 ✅ Extraction of key details (kWh, dates, cost) from Jerry's scanned bill  
 ✅ AI-generated comparisons and suggestions for energy-saving actions
 
-
+Check out the Video
 [![Watch the video](https://img.youtube.com/vi/ED8UNHP2eHo/hqdefault.jpg)](https://youtu.be/ED8UNHP2eHo)
+Check out the PDF [technical document that dives deep into the GenAI approach of solving the problem](watt-seer-coach-technical.pdf)  
 
 ---
 
@@ -205,6 +208,9 @@ If you've got a folder of bills — or a zip of usage data — maybe it's your t
 
 ---
 
+## 🧠 Acknowlegements
+- We collaborated in 4 seperate projects with Zoom calls, discord, and Kaggle Group shared notebook. We would like to acknowledge all the other team members in those projects: Arushi, Eric, Lan, Harshita, Praveen, Naga, Jim, Lamide, Saad, Jonathan. Special thanks to [Arushi Tariyal](https://www.kaggle.com/arushitariyal) for going above and beyond helping us and others as well.
+
 ## 🔗 Try Watt-Seer Yourself
 
 
@@ -213,3 +219,5 @@ If you've got a folder of bills — or a zip of usage data — maybe it's your t
 Upload your own usage data. Or just bring a photo of your bill.  
 Let the AI do the explaining.  
 You've got energy stories waiting to be told.
+
+Questions/Feedback? Post your questions via [Kaggle Comments](https://www.kaggle.com/code/sureshsrinivas/watt-seer-personalized-energy-coach/comments) | or open an issue on our <a href="https://github.com/suresh-srinivas/Watt-Seer-Blog-Gen-AI-Intensive-Course-Capstone-2025Q1/issues" style="display: inline-flex; align-items: center; text-decoration: none;"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" width="16" height="16" style="vertical-align: middle; margin-right: 4px;"/>GitHub Issues</a>
