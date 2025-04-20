@@ -85,6 +85,12 @@ Gemini Vision read Jerry's scanned bill and returned:
 
 ---
 
+## 💬 Technical details: Use case, GenAI capabilities and lessons learned
+
+Refer to the PDF [technical document that dives deep into the GenAI approach of solving the problem](watt-seer-coach-technical.pdf)  
+
+---
+
 ## 🧪 Sample Code from the Watt-Seer Notebook
 
 ### 🔹 Resampling hourly data to monthly
