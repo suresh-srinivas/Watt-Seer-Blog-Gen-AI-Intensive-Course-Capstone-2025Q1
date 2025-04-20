@@ -1,7 +1,7 @@
 ---
 title: "Is Your Energy Bill Normal? AI Finds Your Household's Energy Twins" 
 description: "Stop comparing apples to oranges. Watt-Seer-Compare uses AI embeddings and LLM analysis on home data to benchmark your energy use against similar homes."
-date: 2025-04-20 
+date: 04-20-2025
 author: Harshitha Srinivas
 layout: default
 ---
