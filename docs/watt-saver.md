@@ -1001,9 +1001,9 @@ It provides actionable suggestions to reduce energy costs and on the prediction 
 # 💡 Watt-Saver - Your Personalized Energy Coach
 ## 🔍 An AI agent that user can ask questions with their own energy data by training
 
-## [LongGraph](https://www.kaggle.com/code/markishere/day-3-building-an-agent-with-langgraph/) Implementation with a Chat Agent ([Funciton calling](https://www.kaggle.com/code/markishere/day-3-function-calling-with-the-gemini-api ) + chat):
+## Below is the [LongGraph](https://www.kaggle.com/code/markishere/day-3-building-an-agent-with-langgraph/) Implementation with a Chat Agent ([Funciton calling](https://www.kaggle.com/code/markishere/day-3-function-calling-with-the-gemini-api ) + chat):
 
-## Prepare LongGraoh nodes, we using @tool decorator to execute the functions we define 
+## Prepare LongGraoh nodes, we using `@tool` decorator to execute the functions we define 
 ```python
 from collections.abc import Iterable
 from random import randint
